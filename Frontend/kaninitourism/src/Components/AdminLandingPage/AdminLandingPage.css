@@ -1,0 +1,119 @@
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    align-items: center;
+    margin-left: 5%;
+}
+.dashboard .col-md-4{
+    width: 25%;
+    padding: 10px;
+
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: #92c9e6;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #d1e8f5;
+}
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    padding-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.approveButton {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.approveButton:hover {
+  background-color: #00a886;
+}
+
+.notApproveButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.notApproveButton:hover {
+  background-color: #d82a1a;
+}
+/* AdminLandingPage.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    height: 80px; /* Adjust the height as needed */
+  }
+  
+  .navbar-actions .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .navbar-actions .logout-button:hover {
+    background-color: #c0392b;
+  }
+  

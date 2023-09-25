@@ -1,0 +1,7 @@
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.csproj.AssemblyReference.cache
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.AssemblyInfoInputs.cache
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.AssemblyInfo.cs
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.csproj.CoreCompileInputs.cache
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\phani\Desktop\BigBang3\Backend\KaniniTourism\Booking\obj\Debug\net6.0\Booking.MvcApplicationPartsAssemblyInfo.cache

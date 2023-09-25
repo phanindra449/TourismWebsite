@@ -1,0 +1,197 @@
+/* CreatePackage.css */
+/* Add styles to arrange input elements in rows of two */
+.add-tour-form form > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.add-tour-form form > div label,
+.add-tour-form form > div select,
+.add-tour-form form > div input,
+.add-tour-form form > div textarea {
+  width: calc(25% - 8px); /* Two items in a row with a small gap */
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Style for buttons */
+.add-tour-form form button[type="button"],
+.add-tour-form form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+}
+
+.add-tour-form form button[type="button"]:hover,
+.add-tour-form form button[type="submit"]:hover {
+  background-color: #0056b3;
+  padding: 10px;
+
+}
+
+/* Additional styling for the form */
+.add-tour-form {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-tour-form h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.add-tour-form h3 {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.add-tour-form select,
+.add-tour-form input[type="text"],
+.add-tour-form input[type="number"],
+.add-tour-form input[type="date"],
+.add-tour-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.add-tour-form textarea {
+  resize: vertical;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .add-tour-form form > div {
+    flex-direction: column;
+  }
+
+  .add-tour-form form > div label,
+  .add-tour-form form > div select,
+  .add-tour-form form > div input,
+  .add-tour-form form > div textarea {
+    width: 100%;
+  }
+}
+/* Styling for different sections */
+.destination-section,
+.date-section,
+.inclusion-section,
+.exclusion-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for buttons */
+/* button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin: 5px;
+} */
+
+/* button:hover {
+  background-color: #0056b3;
+} */
+
+/* Styling for input fields */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* ... add more custom styling as needed ... */
+/* Styling for the destination section */
+.travelagent-tourdestination {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.travelagent-tourdestination h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.travelagent-tourdestination {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.travelagent-tourdestination:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.travelagent-tourdestination {
+  font-weight: bold;
+}
+
+.destination-input {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.destination-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.travelagent-tourdestination button {
+  background-color: #0f1011;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.travelagent-tourdestination-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.travelagent-tourdetails{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,217 @@
+.ReactModal__Content{
+
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+  
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* Adjust the max-width to your desired value */
+    height: 80%; /* Adjust the height to your desired value */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ... (remaining CSS rules) ... */
+  
+  /* ... (existing styles) ... */
+
+/* Login form container */
+.container.sign-in {
+    height: 100px; /* Change this value to your desired height for the login section */
+  }
+  
+  /* Registration form container */
+  .container.sign-up {
+    height: 850px; /* Change this value to your desired height for the registration section */
+  }
+  
+  /* ... (existing styles) ... */
+  
+  
+  .container.sign-up {
+    transform: translate(-70%, -50%);
+  }
+  
+  /* Form toggle styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #5f9ea0;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5f9ea0;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .toggle-label {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #5f9ea0;
+  }
+  
+  /* Form layout styles */
+  .row {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form .input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .form .input-group i {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+  
+  .form .input-group input {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .form .input-group input:focus {
+    border-color: #5f9ea0;
+    box-shadow: 0 0 3px #5f9ea0;
+  }
+  
+  .form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    background-color: #5f9ea0;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #4682b4;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Content section styles */
+  .content-row {
+    flex-basis: -150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Set a higher z-index value */
+  }
+  

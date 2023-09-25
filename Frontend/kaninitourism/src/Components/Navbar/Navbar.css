@@ -1,0 +1,150 @@
+.navbar .header{
+    background: white;
+    width: 100%;
+    float: right;
+    top: 0;
+}
+
+.navbar .header nav{
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav .content{
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav .content .links{
+    margin-left: 80px;
+    display: flex;
+}
+
+.navbar nav .content .links a img{
+    width: 50px;
+}
+
+.navbar nav .content .links li{
+    list-style: none;
+    line-height: 70px;
+}
+
+.navbar nav .content .links li a,
+.navbar nav .content .links li label{
+    color: #020306;
+    font-size: 18px;
+    padding: 9px 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar .content .links li label{
+    display: none;
+}
+
+.navbar nav .content .links li a:hover,
+.navbar nav .content .links li label:hover{
+    color: #1c0a51;
+    background: #f4f5fb;
+    text-decoration: none;
+}
+
+.navbar .header .search-icon,
+.navbar .header .menu-icon{
+    color: #040407;
+    font-size: 18px;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar .header .menu-icon{
+    display: block;
+}
+/* ... (previous CSS) */
+
+.navbar {
+    z-index: 1000; /* Add a higher z-index to ensure the navbar is on top */
+  }
+  
+  /* ... (previous CSS) */
+  
+.navbar .header input[type="checkbox"]{
+    display: none;
+    z-index: 9999; /* Adjust the z-index to bring the navbar links on top */
+
+}
+
+/* Responsive */
+@media screen and (max-width:1250px){
+    .navbar .header nav{
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    .navbar nav .content .links{
+        margin-left: 30px;
+    }
+    .navbar .content .links a{
+        padding: 8px 13px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .navbar .header .menu-icon{
+        display: block;
+    }
+    .navbar nav .content .links {
+        width: 80%; /* Adjust the width as needed */
+      }
+    .navbar .header #show-menu:checked ~ .menu-icon i::before{
+        content: "\f00d";
+    }
+    /* Mobile view styles for hamburger icon */
+    .navbar .header .menu-icon {
+        display: block; /* Show the hamburger icon */
+    }
+
+    /* Hide the links when the hamburger icon is checked */
+    .navbar .header #show-menu:checked ~ .content .links {
+        left: 0%;
+    }
+
+   
+.navbar nav .content .links {
+    display: block;
+    position: fixed;
+    background: #d8d5df;
+    height: 100%;
+    width: 70%;
+    top: 70px;
+    left: -100%;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+    .navbar nav #show-menu:checked ~ .content .links{
+        left: 0%;
+    }
+    .navbar .content .links li{
+        margin: 15px 20px;
+    }
+    .navbar .content .links li a,
+    .navbar .content .links li label{
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+    .navbar .content .links li a.desktop-link{
+        display: none;
+    }
+}
+.circular--landscape { display: inline-block; position: relative; width: 100px; height: 80px; overflow: hidden; border-radius: 50%; } 
+.circular--landscape img { width: auto; height: 100%; margin-left: -10px; }
